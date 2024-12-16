@@ -1,0 +1,16 @@
+-- database: ./paper_summaries.db
+
+SELECT *
+FROM hf_email
+WHERE email_date BETWEEN '2024-11-01' AND '2024-11-08';
+
+UPDATE hf_email
+SET downloaded = 0,
+    summarized = 0,
+    post_generated = 0
+WHERE email_date BETWEEN '2024-11-01' AND '2024-11-08';
+
+
+SELECT *
+FROM hf_email
+WHERE arxiv_id = '2411.07126v1';

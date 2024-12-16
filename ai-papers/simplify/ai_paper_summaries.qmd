@@ -1,0 +1,459 @@
+---
+title: "🌙 AI Afterhours: Top AI Papers for Nov 01 - Nov 07, 2024"
+author: "Shwetank Kumar"
+date: "Nov 07, 2024"
+categories: [Android autonomous agents, Text-to-Image Synthesis, Multimodal Large Language Models, Retrieval-Augmented Generation, Vision-Language Models, Large Language Models, Reinforcement Learning]
+draft: true
+page-layout: article
+---
+
+Welcome to this week's AI Afterhours! Your weekly digest of most upvoted papers in AI. Below is gist of the results, how they got them, and why you should care. With that, let's dive into the most exciting AI research from November 01 to November 07, 2024. 
+
+
+            
+<iframe src="https://podcasters.spotify.com/pod/show/shwetankkumar/embed" height="200px" width="400px" frameborder="0" scrolling="no"></iframe>
+
+<iframe src="../../subscribe.html" width="600" height="400" class="newsletter-form"></iframe>   
+            
+
+# Summaries
+
+#### HtmlRAG: HTML is Better Than Plain Text for Modeling Retrieved Knowledge in RAG Systems ↑49
+
+*Main Problem:* The paper addresses the problem of information loss in Retrieval-Augmented
+  Generation (RAG) systems when using plain text for external knowledge, which
+  leads to reduced performance in question answering tasks.
+
+*Approach:* The HtmlRAG approach involves HTML cleaning, block tree construction, and two-
+  stage HTML pruning using text embedding and generative models. The method
+  includes HTML cleaning to remove unnecessary tags, block tree construction to
+  represent the structure of the HTML document, and two-stage pruning to reduce
+  the size of the HTML document while preserving essential information.
+
+*Findings:* The experiments on six QA datasets show that HtmlRAG outperforms existing post-
+  retrieval processes based on plain text, with improvements ranging from 1.5%
+  to 11.75% in Hit@1 and EM metrics. The average token count for all retrieved
+  knowledge in HTML format is 1.6M, which is reduced to 4K after HTML pruning.
+  The generative model adapts to a finer granularity than the embedding model
+  and generally outperforms it.
+
+*Impact:* The proposed method provides a simple and effective solution for processing HTML
+  in RAG systems, opening up a new research direction. It can be applied to most
+  RAG systems and strikes a balance between efficiency and effectiveness.
+
+*Key Results:*
+- Improvements in Hit@1 and EM metrics range from 1.5% to 11.75%
+- Average token count for all retrieved knowledge in HTML format is 1.6M
+- Token count reduced to 4K after HTML pruning
+- Generative model adapts to a finer granularity than the embedding model
+
+*Limitations:* The computational cost of the generative model is a bit higher than the
+  baseline, but still much lower than the cost of the LLM for chatting. Over 45%
+  of nodes can be skipped, explaining the little increase in the generative
+  model's computational cost.
+
+*Innovations:* HtmlRAG introduces a novel approach to processing HTML in RAG systems, using
+  HTML cleaning, block tree construction, and two-stage HTML pruning. The method
+  also uses text embedding and generative models for pruning.
+
+*Key Figures:* The key figures include the improvements in Hit@1 and EM metrics, the average
+  token count for all retrieved knowledge in HTML format, and the reduction in
+  token count after HTML pruning.
+
+ArXiv: [2411.02959v1](https://arxiv.org/pdf/2411.02959v1)
+
+<small>🏷️ Retrieval-Augmented Generation, HTML processing, Text Embedding, Generative Models, Question Answering</small>
+
+---
+
+#### AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents ↑45
+
+*Main Problem:* The paper addresses the challenge of training and evaluating Android autonomous
+  agents, which is crucial for developing reliable and efficient autonomous
+  systems.
+
+*Approach:* The paper proposes ANDROIDLAB, a systematic framework for training and
+  evaluating Android autonomous agents. The framework includes an operational
+  environment with different modalities, action space, and a reproducible
+  benchmark. It supports both large language models (LLMs) and multimodal models
+  (LMMs) in the same action space. The benchmark includes 138 tasks across nine
+  apps built on pre-packaged Android virtual devices.
+
+*Findings:* The authors evaluate six open-source LLMs and LMMs using the ANDROIDLAB
+  environment, achieving an average success rate of 21.50% for LLMs and 13.28%
+  for LMMs. Fine-tuning with the Android Instruction dataset raises the average
+  success rates from 4.59% to 21.50% for LLMs and from 1.93% to 13.28% for LMMs.
+  The ReAct framework significantly improves performance in XML mode, while
+  SeeAct does not enhance performance consistently.
+
+*Impact:* The paper's results have significant implications for the development of
+  reliable and efficient autonomous systems, as they provide a systematic
+  framework for training and evaluating Android autonomous agents. The findings
+  also highlight the importance of fine-tuning with domain-specific datasets and
+  the potential benefits of using the ReAct framework.
+
+*Key Results:*
+- Average success rate of LLMs: 21.50%
+- Average success rate of LMMs: 13.28%
+- Increase in average success rate of LLMs after fine-tuning: 16.91% (from 4.59%
+  to 21.50%)
+- Increase in average success rate of LMMs after fine-tuning: 11.35% (from 1.93%
+  to 13.28%)
+
+*Limitations:* The paper's limitations include the use of open-source models, which may not be
+  representative of the best-performing models. Additionally, the evaluation of
+  the SeeAct framework did not show consistent improvements in performance.
+
+*Innovations:* The paper introduces the ANDROIDLAB framework, which is a novel approach to
+  training and evaluating Android autonomous agents. The framework's ability to
+  support both LLMs and LMMs in the same action space is also an innovation.
+
+*Key Figures:* The key figures in the paper include the average success rates of LLMs and LMMs,
+  which are 21.50% and 13.28%, respectively. The figure also shows the impact of
+  fine-tuning with the Android Instruction dataset on the average success rates.
+
+ArXiv: [2410.24024v2](https://arxiv.org/pdf/2410.24024v2)
+
+<small>🏷️ Android autonomous agents, Large language models (LLMs), Multimodal models (LMMs), Android Instruction dataset, ReAct framework</small>
+
+---
+
+#### OS-ATLAS: A Foundation Action Model for Generalist GUI Agents ↑43
+
+*Main Problem:* The paper addresses the limitations of existing open-source Vision-Language
+  Models (VLMs) in GUI grounding and Out-Of-Distribution (OOD) scenarios, aiming
+  to develop a generalist GUI agent that can handle various tasks across
+  multiple platforms.
+
+*Approach:* The OS-ATLAS model operates in three modes: Grounding, Action, and Agent. It
+  uses a multi-platform GUI grounding data synthesis toolkit and a unified
+  action space to resolve action naming conflicts. The model is trained on a
+  large-scale, open-source corpus of screenshots that encompasses multiple
+  platforms, applications, and resolution sizes.
+
+*Findings:* The authors achieve state-of-the-art results on six benchmarks across three
+  platforms: desktop, mobile, and web. The grounding accuracy is 85.71% on
+  ScreenSpot and 94.14% on ScreenSpot-V2. OS-ATLAS demonstrates superior
+  capabilities in addressing unseen tasks across all six OOD evaluation
+  datasets.
+
+*Impact:* The OS-ATLAS model can serve as an open-source alternative to powerful
+  commercial VLMs, such as GPT-4o, for developing future GUI agents. It has the
+  potential to reduce the need for expensive and proprietary solutions.
+
+*Key Results:*
+- Grounding accuracy of 85.71% on ScreenSpot
+- Grounding accuracy of 94.14% on ScreenSpot-V2
+- Superior capabilities in addressing unseen tasks across all six OOD evaluation
+  datasets
+
+*Limitations:* The paper does not discuss the scalability of the OS-ATLAS model for very large-
+  scale GUI applications or its performance in extremely complex GUI scenarios.
+
+*Innovations:* The OS-ATLAS model introduces a unified action space, which reduces the number
+  of unique action types from 17 to 10, effectively resolving several naming
+  conflicts.
+
+*Key Figures:* Figure 1 illustrates the OS-ATLAS model operating in three distinct modes.
+  Figure 2 presents the results of the OS-ATLAS model on six benchmarks across
+  three platforms.
+
+ArXiv: [2410.23218v1](https://arxiv.org/pdf/2410.23218v1)
+
+<small>🏷️ Vision-Language Models, GUI Grounding, Action Space, Open-Source, Computer Vision</small>
+
+---
+
+#### OpenCoder: The Open Cookbook for Top-Tier Code Large Language Models ↑41
+
+*Main Problem:* The paper addresses the challenge of developing top-tier code large language
+  models (LLMs) that are both highly performant and accessible to the research
+  community.
+
+*Approach:* The authors introduce OpenCoder, a top-tier code LLM that serves as an open
+  cookbook for the research community. They propose a novel dataset, RefineCode,
+  consisting of 960 billion tokens, and a sophisticated data processing pipeline
+  to produce a code pretraining corpus. The pipeline includes preprocessing,
+  deduplication, transformation, filtering, and data sampling. The authors also
+  conduct a series of ablation analyses on each phase of the code LLM training
+  process.
+
+*Findings:* The key findings include: OpenCoder achieves top-tier performance on various
+  benchmarks, including HumanEval, MBPP, and BigCodeBench. The use of high-
+  quality data in the annealing phase is crucial for further enhancing the
+  model's capabilities. File-level deduplication is more effective than
+  repository-level deduplication. The two-stage instruction tuning strategy is
+  effective in improving the model's performance. The model's performance is
+  significantly improved when using the RefineCode dataset compared to The Stack
+  v2.
+
+*Impact:* The potential impact of this research is significant, as it provides a highly
+  performant and accessible code LLM that can be used as a benchmark for future
+  research. The release of the complete training materials, including the data
+  processing pipeline, reproducible pretraining dataset, and intermediate
+  checkpoints, will facilitate the development of future code LLMs.
+
+*Key Results:*
+- OpenCoder achieves top-tier performance on HumanEval with a score of 94.5.
+- The use of high-quality data in the annealing phase improves the model's
+  performance by 12.5%.
+- File-level deduplication improves the model's performance by 8.2% compared to
+  repository-level deduplication.
+
+*Limitations:* The paper does not discuss the potential limitations of the RefineCode dataset,
+  such as its potential bias towards certain programming languages or domains.
+
+*Innovations:* The authors introduce a novel dataset, RefineCode, and a sophisticated data
+  processing pipeline to produce a code pretraining corpus. They also propose a
+  two-stage instruction tuning strategy.
+
+*Key Figures:* Figure 1 illustrates OpenCoder's performance surpassing all previous fully open
+  models and other open-access models at the 6B+ parameter scale. Figure 2
+  visualizes the pretraining data processing workflow. Figure 3 shows the PCA
+  data distributions of RefineCode and The Stack v2. Figure 4 presents the
+  distribution of top program languages.
+
+ArXiv: [2411.04905v1](https://arxiv.org/pdf/2411.04905v1)
+
+<small>🏷️ Large Language Models, Code Generation, Natural Language Processing, Deep Learning, Software Engineering</small>
+
+---
+
+#### Unpacking SDXL Turbo: Interpreting Text-to-Image Models with Sparse Autoencoders ↑38
+
+*Main Problem:* The paper addresses the challenge of interpreting and controlling the
+  intermediate representations of text-to-image models, specifically SDXL Turbo,
+  to better understand their internal structure and generation process.
+
+*Approach:* The authors employ sparse autoencoders (SAEs) to analyze the updates performed
+  by cross-attention transformer blocks in SDXL Turbo's denoising U-net. Notable
+  technical aspects include the application of SAEs to reveal specialization
+  among transformer blocks and the use of metrics such as specificity, texture
+  score, and color activation to quantify the learned features.
+
+*Findings:* The study reveals that the learned features are interpretable, causally
+  influence the generation process, and exhibit specialization among transformer
+  blocks. Key quantitative results include: specificity score of 0.71 (0.11) for
+  down.2.1, CLIP similarity score of 0.19 (0.04) between intervention images and
+  feature captions, and texture score of 0.20 (0.02) for up.0.1. The features
+  are also sensitive, with a proportion of generated images in which the feature
+  is active on more than 0%, 10%, 30% of the image area being 0.60 (0.32), 0.40
+  (0.34), 0.27 (0.30) respectively.
+
+*Impact:* The research demonstrates the potential of SAEs in revealing the internal
+  structure of diffusion models like SDXL Turbo, which could help future
+  researchers answer more sophisticated questions about image generation.
+
+*Key Results:*
+- Specificity score of 0.71 (0.11) for down.2.1
+- CLIP similarity score of 0.19 (0.04) between intervention images and feature
+  captions
+- Texture score of 0.20 (0.02) for up.0.1
+
+*Limitations:* The study does not address the limitations of SAEs in capturing complex
+  relationships between features, and the generalizability of the results to
+  other text-to-image models.
+
+*Innovations:* The use of SAEs to analyze the intermediate representations of text-to-image
+  models is an innovative technique.
+
+*Key Figures:* Figure 1 presents the top 5 features of down.2.1 and up.0, providing a visual
+  representation of the learned features.
+
+ArXiv: [2410.22366v1](https://arxiv.org/pdf/2410.22366v1)
+
+<small>🏷️ Text-to-Image Synthesis, Sparse Autoencoders, Transformer Blocks, Diffusion Models, Computer Vision</small>
+
+---
+
+#### Both Text and Images Leaked! A Systematic Analysis of Multimodal LLM Data Contamination ↑36
+
+*Main Problem:* The paper addresses the problem of data contamination in multimodal large
+  language models (MLLMs), which can lead to unfair performance comparisons and
+  biased evaluations.
+
+*Approach:* The study introduces MM-Detect, a multimodal data contamination detection
+  framework that consists of two methods: Option Order Sensitivity Test and Slot
+  Guessing for Perturbation Caption. These methods are tailored for evaluating
+  multiple-choice and image captioning tasks, respectively.
+
+*Findings:* The study finds that MM-Detect can detect contamination in 100% of the models
+  tested, with an average increase of 8.2% in correct rate (CR) and 3.7% in
+  perturbed correct rate (PCR) after contamination. The degree of contamination
+  can be reflected in the atomic metrics, with a significant increase of 8.7% in
+  CR and 7.3% in PCR, and a decrease of 1.4% in ∆, as contamination degrees rise
+  from 10% to 50%. Training set leakage leads to unfairness, with an average
+  increase of 4.3% in CR and 2.7% in PCR after removing the training set from
+  the model. The contamination in MLLMs may not solely originate from the cross-
+  modal contamination but could also stem from the unimodal contamination, with
+  some LLMs exhibiting high contamination rates even without image inputs.
+
+*Impact:* The study highlights the importance of addressing data contamination in MLLMs,
+  which can lead to unfair performance comparisons and biased evaluations. The
+  MM-Detect framework provides a valuable tool for detecting contamination in
+  MLLMs, enabling researchers to evaluate model performance more accurately and
+  fairly.
+
+*Key Results:*
+- MM-Detect can detect contamination in 100% of the models tested.
+- The average increase in correct rate (CR) is 8.2% and in perturbed correct rate
+  (PCR) is 3.7% after contamination.
+- The degree of contamination can be reflected in the atomic metrics, with a
+  significant increase of 8.7% in CR and 7.3% in PCR, and a decrease of 1.4% in
+  ∆, as contamination degrees rise from 10% to 50%.
+
+*Limitations:* None specified
+
+*Innovations:* MM-Detect is an innovative framework for detecting data contamination in MLLMs.
+
+*Key Figures:* The study presents several key figures, including the performance of MM-Detect
+  on various MLLMs and datasets, which demonstrate the effectiveness of the
+  framework in detecting contamination.
+
+ArXiv: [2411.03823v1](https://arxiv.org/pdf/2411.03823v1)
+
+<small>🏷️ Multimodal Large Language Models, Data Contamination Detection, Machine Learning Fairness, Natural Language Processing, Computer Vision</small>
+
+---
+
+#### Large Language Models Orchestrating Structured Reasoning Achieve Kaggle Grandmaster Level ↑32
+
+*Main Problem:* The paper addresses the challenge of automating data science tasks using large
+  language models (LLMs) and achieving expert-level performance in Kaggle
+  competitions.
+
+*Approach:* The key approach is to develop an end-to-end autonomous data science agent,
+  Agent K v1.0, which integrates a structured reasoning framework with a memory
+  module to leverage past successes and failures for adaptive learning. The
+  agent uses a combination of natural language processing (NLP) and computer
+  vision techniques to analyze competition descriptions, raw data, and task
+  details.
+
+*Findings:* The agent achieves a 92.5% success rate across tasks, spanning multiple domains,
+  and ranks in the top 38% of human Kaggle competitors. In tabular tasks, the
+  agent achieves a Pass@10 score of 95.7%, while in computer vision tasks, it
+  achieves a score of 85.2%. The agent also demonstrates an improvement over
+  many human participants, with a notable 200% improvement over users like
+  'tracyporter'.
+
+*Impact:* The research has the potential to significantly impact the field of data science
+  by enabling the automation of complex tasks and achieving expert-level
+  performance in Kaggle competitions.
+
+*Key Results:*
+- 92.5% success rate across tasks
+- 95.7% Pass@10 score in tabular tasks
+- 85.2% Pass@10 score in computer vision tasks
+- 200% improvement over users like 'tracyporter'
+
+*Limitations:* The paper does not discuss any notable limitations of the approach, but it is
+  likely that the agent's performance may degrade in tasks that require human
+  intuition or creativity.
+
+*Innovations:* The paper introduces the concept of a structured reasoning framework with a
+  memory module, which enables the agent to adapt to new situations and learn
+  from past experiences.
+
+*Key Figures:* The radar chart and the Elo-MMR score are key figures that demonstrate the
+  agent's performance and ranking in Kaggle competitions.
+
+ArXiv: [2411.03562v1](https://arxiv.org/pdf/2411.03562v1)
+
+<small>🏷️ Large Language Models, Structured Reasoning, Natural Language Processing, Computer Vision, Autonomous Data Science</small>
+
+---
+
+#### What Happened in LLMs Layers when Trained for Fast vs. Slow Thinking: A Gradient Perspective ↑32
+
+*Main Problem:* The study investigates the training patterns of large language models (LLMs)
+  through the lens of gradient, focusing on the layer-wise gradients of LLMs
+  when trained with different responses and initial models.
+
+*Approach:* The authors compare the gradients of slow vs. fast thinking rationals when
+  training different initial models using correct vs. irrelevant responses on
+  different tasks, analyzing the layer-wise gradients of 5 base LLMs and 5
+  instruction-finetuned LLMs on different data, including three types of tasks
+  (Math, Commonsense Reasoning, and Wiki Knowledge) and correct vs. irrelevant
+  responses.
+
+*Findings:* The results show that slow thinking leads to similar gradient norms of different
+  layers, while fast thinking results in larger gradients and larger differences
+  of gradients across layers. The study also finds that pre-trained LLMs are
+  less affected by the instability of fast thinking than instruction-tuned LLMs.
+  Furthermore, the gradients of slow thinking can distinguish correct and
+  irrelevant reasoning paths. The mean absolute differences (MAD) of gradient's
+  nuclear norm for K, Q, V, O projection layers are presented in Table 2.
+
+*Impact:* The study's findings have implications for understanding the efficiency and
+  stability of LLM training and shed light on the importance of slow thinking in
+  LLM training.
+
+*Key Results:*
+- Slow thinking leads to similar gradient norms of different layers, with a mean
+  absolute difference (MAD) of 0.02 to 0.10 for simplified and detailed
+  responses.
+- Fast thinking results in larger gradients and larger differences of gradients
+  across layers, with a MAD of 0.02 to 0.20 for correct and irrelevant
+  responses.
+- Pre-trained LLMs are less affected by the instability of fast thinking than
+  instruction-tuned LLMs, with a MAD of 0.18 to 0.47 for pre-trained LLMs and
+  0.62 to 0.73 for instructed LLMs.
+
+*Limitations:* None specified
+
+*Innovations:* None specified
+
+*Key Figures:* Figure 1 shows the nuclear norm of gradients across different layers when
+  trained with fast to slow reasoning paths on AQuA and ECQA datasets.
+
+ArXiv: [2410.23743v1](https://arxiv.org/pdf/2410.23743v1)
+
+<small>🏷️ Large Language Models, Gradient Analysis, Neural Network Training, Efficient Training Methods, Deep Learning</small>
+
+---
+
+#### WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning ↑30
+
+*Main Problem:* The paper addresses the challenges of training large language models (LLMs) for
+  web-based tasks, including the scarcity of training tasks, sparse feedback
+  signals, and policy distribution drift in online learning.
+
+*Approach:* The key approach is a self-evolving online curriculum reinforcement learning
+  framework called WEBRL, which incorporates a self-evolving curriculum, a
+  robust outcome-supervised reward model (ORM), and adaptive reinforcement
+  learning strategies to ensure consistent improvements.
+
+*Findings:* The study demonstrates the effectiveness of WEBRL in transforming open LLMs into
+  proficient web agents, achieving significant performance gains over existing
+  state-of-the-art web agents and proprietary LLM APIs. Specifically, WEBRL
+  improves the success rate of Llama-3.1-8B from 4.8% to 42.4% and from 6.1% to
+  43% for GLM-4-9B on WebArena-Lite. The authors also demonstrate the
+  effectiveness of WEBRL on larger-scale models, achieving an overall accuracy
+  of 49.1% for Llama3.1-70B.
+
+*Impact:* The results highlight the potential of WEBRL in advancing the capabilities of
+  open-source LLMs for web-based tasks, and its potential to improve the
+  performance of web agents in various applications.
+
+*Key Results:*
+- Success rate of Llama-3.1-8B improved from 4.8% to 42.4%
+- Success rate of GLM-4-9B improved from 6.1% to 43%
+- Overall accuracy of Llama3.1-70B achieved 49.1%
+
+*Limitations:* The study does not discuss the scalability of WEBRL to very large models or the
+  potential for overfitting to specific tasks.
+
+*Innovations:* The study introduces the self-evolving online curriculum reinforcement learning
+  framework, which is a novel approach to training LLMs for web-based tasks.
+
+*Key Figures:* Figure 5 presents the results of the ablation study, which shows that all
+  components of WEBRL are essential for achieving consistent improvements.
+  Figure 6 presents the evaluation of the ORM, which demonstrates its
+  effectiveness in reducing errors.
+
+ArXiv: [2411.02337v1](https://arxiv.org/pdf/2411.02337v1)
+
+<small>🏷️ Reinforcement Learning, Large Language Models, Web Agents, Online Curriculum Learning, Self-Evolving Systems</small>
+
+---
+

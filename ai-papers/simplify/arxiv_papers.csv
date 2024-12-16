@@ -1,0 +1,103 @@
+Date: 07-11-2024
+Paper Title,Upvotes
+OpenCoder: The Open Cookbook for Top-Tier Code Large Language Models,41
+ReCapture: Generative Video Camera Controls for User-Provided Videos using Masked Video Fine-Tuning,29
+BitNet a4.8: 4-bit Activations for 1-bit LLMs,20
+DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion,10
+Mixture-of-Transformers: A Sparse and Scalable Architecture for Multi-Modal Foundation Models,10
+Thanos: Enhancing Conversational Agents with Skill-of-Mind-Infused Large Language Model,7
+TIP-I2V: A Million-Scale Real Text and Image Prompt Dataset for Image-to-Video Generation,7
+VideoGLaMM: A Large Multimodal Model for Pixel-Level Visual Grounding in Videos,6
+DynaMem: Online Dynamic Spatio-Semantic Memory for Open World Mobile Manipulation,6
+Needle Threading: Can LLMs Follow Threads through Near-Million-Scale Haystacks?,5
+SVDQunat: Absorbing Outliers by Low-Rank Components for 4-Bit Diffusion Models,5
+SG-I2V: Self-Guided Trajectory Control in Image-to-Video Generation,5
+GazeGen: Gaze-Driven User Interaction for Visual Content Generation,4
+RetrieveGPT: Merging Prompts and Mathematical Models for Enhanced Code-Mixed Information Retrieval,4
+Diff-2-in-1: Bridging Generation and Dense Perception with Diffusion Models,1
+M3DocRAG: Multi-modal Retrieval is What You Need for Multi-page Multi-document Understanding
+
+Date: 06-11-2024
+Paper Title,Upvotes
+Both Text and Images Leaked! A Systematic Analysis of Multimodal LLM Data Contamination,36
+Large Language Models Orchestrating Structured Reasoning Achieve Kaggle Grandmaster Level,32
+Polynomial Composition Activations: Unleashing the Dynamics of Large Language Models,13
+Self-Consistency Preference Optimization,7
+From Medprompt to o1: Exploration of Run-Time Strategies for Medical Challenge Problems and Beyond,5
+
+Date: 05-11-2024
+Paper Title,Upvotes
+HtmlRAG: HTML is Better Than Plain Text for Modeling Retrieved Knowledge in RAG Systems,49
+LLaMo: Large Language Model-based Molecular Graph Assistant,17
+Controlling Language and Diffusion Models by Transporting Activations,14
+DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution,12
+Adaptive Length Image Tokenization via Recurrent Allocation,10
+Sample-Efficient Alignment for LLMs,10
+DreamPolish: Domain Score Distillation With Progressive Geometry Generation,9
+GarVerseLOD: High-Fidelity 3D Garment Reconstruction from a Single In-the-Wild Image using a Dataset with Levels of Details,6
+Inference Optimal VLMs Need Only One Visual Token but Larger Models,5
+Zebra-Llama: A Context-Aware Large Language Model for Democratizing Rare Disease Knowledge,5
+Correlation of Object Detection Performance with Visual Saliency and Depth Estimation,3
+
+Date: 04-11-2024
+Paper Title,Upvotes
+AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents,45
+"Give Me BF16 or Give Me Death"? Accuracy-Performance Trade-Offs in LLM Quantization,43
+WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning,30
+How Far is Video Generation from World Model: A Physical Law Perspective,27
+MVPaint: Synchronized Multi-View Diffusion for Painting Anything 3D,23
+Survey of Cultural Awareness in Language Models: Text and Beyond,23
+Training-free Regional Prompting for Diffusion Transformers,22
+Hunyuan-Large: An Open-Source MoE Model with 52 Billion Activated Parameters by Tencent,21
+Adaptive Caching for Faster Video Generation with Diffusion Transformers,17
+GenXD: Generating Any 3D and 4D Scenes,16
+DynaMath: A Dynamic Visual Benchmark for Evaluating Mathematical Reasoning Robustness of Vision Language Models,14
+AutoVFX: Physically Realistic Video Editing from Natural Language Instructions,13
+DynaSaur: Large Language Agents Beyond Predefined Actions,13
+PPLLaVA: Varied Video Sequence Understanding With Prompt Guidance,10
+Sparsing Law: Towards Large Language Models with Greater Activation Sparsity,9
+IGOR: Image-GOal Representations are the Atomic Control Units for Foundation Models in Embodied AI,8
+LIBMoE: A Library for comprehensive benchmarking Mixture of Experts in Large Language Models,8
+SALSA: Soup-based Alignment Learning for Stronger Adaptation in RLHF,7
+Decoding Dark Matter: Specialized Sparse Autoencoders for Interpreting Rare Concepts in Foundation Models,6
+Constrained Diffusion Implicit Models,5
+Multi-expert Prompting Improves Reliability, Safety, and Usefulness of Large Language Models,5
+LoRA-Contextualizing Adaptation of Large Multimodal Models for Long Document Understanding,4
+Swan and ArabicMTEB: Dialect-Aware, Arabic-Centric, Cross-Lingual, and Cross-Cultural Embedding Models and Benchmarks,3
+
+Date: 03-11-2024
+Title,Upvotes
+OS-ATLAS: A Foundation Action Model for Generalist GUI Agents,43
+Personalization of Large Language Models: A Survey,25
+Constant Acceleration Flow,22
+TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models,19
+Randomized Autoregressive Visual Generation,17
+Physics in Next-token Prediction,14
+Survey of User Interface Design and Interaction Techniques in Generative AI Applications,11
+GPT or BERT: why not both?,10
+In-Context LoRA for Diffusion Transformers,10
+CityGaussianV2: Efficient and Geometrically Accurate Reconstruction for Large-Scale Scenes,9
+Adapting While Learning: Grounding LLMs for Scientific Problems with Intelligent Tool Usage Adaptation,9
+Zipfian Whitening,8
+Fashion-VDM: Video Diffusion Model for Virtual Try-On,7
+SambaMixer: State of Health Prediction of Li-ion Batteries using Mamba State Space Models,7
+HelloMeme: Integrating Spatial Knitting Attentions to Embed High-Level and Fidelity-Rich Conditions in Diffusion Models,7
+Face Anonymization Made Simple,6
+GRS-QA -- Graph Reasoning-Structured Question Answering Dataset,6
+M2rc-Eval: Massively Multilingual Repository-level Code Completion Evaluation,6
+WikiNER-fr-gold: A Gold-Standard NER Corpus,4
+
+Date: 01-11-2024
+Paper Title,Upvotes
+Unpacking SDXL Turbo: Interpreting Text-to-Image Models with Sparse Autoencoders,38
+What Happened in LLMs Layers when Trained for Fast vs. Slow Thinking: A Gradient Perspective,32
+A Pointer Network-based Approach for Joint Extraction and Detection of Multi-Label Multi-Class Intents,16
+Constraint Back-translation Improves Complex Instruction Following of Large Language Models,12
+Language Models can Self-Lengthen to Generate Long Texts,11
+SelfCodeAlign: Self-Alignment for Code Generation,7
+BenchX: A Unified Benchmark Framework for Medical Vision-Language Pretraining on Chest X-Rays,6
+AAAR-1.0: Assessing AI's Potential to Assist Research,5
+Navigating the Unknown: A Chat-Based Collaborative Interface for Personalized Exploratory Tasks,5
+Learning Video Representations without Natural Videos,5
+BitStack: Fine-Grained Size Control for Compressed Large Language Models in Variable Memory Environments,5
+Teaching Embodied Reinforcement Learning Agents: Informativeness and Diversity of Language Use,3

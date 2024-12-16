@@ -1,0 +1,41 @@
+## Claude
+Get me the date of the this webpage as as dd-mm-yyyy and below that paper titles and upvotes as csv.
+
+## Claude Sonnet Summary
+I want to summarize these papers in AI from last week into a post for my blog. I want you to convert each paper into ~500 word gist of the content.
+1. Keep a conversational style but dont make the language cliched or repetitive. I want it to come across as written by technically serious person who is able to communicate complex concepts to masses with the tone being what Patio11 would use. Keep the jargon to a minimum and when possible expand it to say exactly what it is.
+2. Make sure you try to keep quantitative aspects of the summaries.
+3. Make sure to cover why someone should be interested in this that is what are the implications of this work.
+4. Generate it in a markdown for quarto blog. 
+5. Make the text related to paper title bold and make it a part of the first sentence.
+6. Below each summary put the arxiv id with a url for the paper. To the right of this add markdown for number of upvotes as a thumbsup followed by number.
+
+
+## Claude Sonnet Summary
+Drowning in AI papers? I've got your lifeline! 🚀
+Tired of FOMO in the AI world? Me too. That's why I'm curating the hottest papers with AI-powered summaries that cut through the noise.
+This week's digest includes:
+
+* Multimodal breakthroughs (Baichuan-Omni, LOKI, MMIE)
+* AI application advancements (VidEgoThink, Meissonic, VIF-RAG)
+* Specialized improvements (MathCoder2, Animate-X, PrefixQuant)
+
+For each top paper, you'll get: 
+📊 Key results 
+🧠 Methodology 
+🔥 Why it matters
+
+Check out the full digest here: https://shwetank-kumar.github.io/posts/summary-2024-10-17/ai_paper_summaries.html
+
+🔔 Subscribe now for weekly updates and stay ahead in AI!
+hashtag#AIResearch hashtag#MachineLearning hashtag#TechTrends
+
+## Claude Sonnet Podcast Summary
+
+🤖 Your weekly dose of breakthrough AI research, simplified. This week we explore:
+
+- AI reaching Kaggle Grandmaster level (6 gold medals!)
+- Teaching AI to use Android phones autonomously
+- Making AI better at using web content (12% accuracy boost)
+- Building better coding assistants with open-source recipes
+- And more papers changing how we build & use AI
